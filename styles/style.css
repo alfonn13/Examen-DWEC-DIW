@@ -93,6 +93,7 @@
 
 }
 
+
   
 @media (min-width: 1024px) {
     :root {
@@ -139,7 +140,8 @@
 
 body{  
     margin: 0;
-    padding: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .h1-hero{

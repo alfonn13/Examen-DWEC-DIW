@@ -1,3 +1,7 @@
+/*Alfonso Reviejo Valle
+Github: https://github.com/alfonn13/Examen-DWEC-DIW
+*/
+
 const formulario = document.querySelector("#formulario")
 const nombre = document.querySelector("#nombre")
 const correo = document.querySelector("#correo")
@@ -16,9 +20,7 @@ const validar = evento => {
     //Nombre
     nombre.value.trim().length === 0 && mensajesErrores.push('El campo nombre no puede estar vacío')
 
-    
-
-    !/^[A-Z]*$/.test(nombre.value.trim()) && mensajesErrores.push('El nombre no empieza por mayuscula')
+    !/^[A-Z][Ña-zñáéíóúÁÉÍÓÚ'° ]+$/.test(nombre.value.trim()) && mensajesErrores.push('El nombre no empieza por mayuscula')
 
     //Correo
     !/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(correo.value.trim()) && mensajesErrores.push('Introduce una dirección de correo electrónico válida')
