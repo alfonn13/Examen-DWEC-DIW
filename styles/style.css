@@ -14,38 +14,99 @@
     --h1-font-size: 3rem;
     --p-font-size:1rem;
     --input-size: 10.75rem;
+    --form-width:30%;
 }
 
 @media (min-width: 768px) {
     :root {
       --h1-font-size: 4rem;
       --p--font-size:2rem;
-      --input-size: 15.75rem;
+      
+      
+    }
+
+    .form-div{
+        width: 510px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 370px) {
+    :root {
+      --h1-font-size: 1rem;
+      --p--font-size:0.5rem;
+      
+      
+    }
+
+    .form-div{
+        width: 270px;
+        margin: 0 auto;    
+    }
+
+    body{
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 }
 
 @media (min-width: 510px) {
     :root {
-      --h1-font-size: 2rem;
-      --p--font-size:1rem;
-      --input-size: 15.75rem;
+        --h1-font-size: 1.5rem;
+        --p--font-size:0.75rem;
+        
+      
     }
+    body{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .form-div{
+        width: 350px;
+        padding: 5px;
+        margin: 0 auto;
+    }
+
 }
 
 @media (min-width: 500px) {
     :root {
       --h1-font-size: 1.5rem;
       --p--font-size:0.75rem;
-      --input-size: 15.75rem;
+      
     }
+
+    .form-div{
+        width: 450px;
+        padding: 5px;
+        margin: 0 auto;
+    }
+
+    body{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
 }
+
   
 @media (min-width: 1024px) {
     :root {
       --h1-font-size: 5rem;
       --p--font-size:3rem;
       --input-size: 20.75rem;
+      
     }
+
+    .form-div{
+        width: 100%;
+        margin: 0 auto;
+    }
+
 }
 
 .hero-container{
@@ -78,6 +139,7 @@
 
 body{  
     margin: 0;
+    padding: 20px;
 }
 
 .h1-hero{
@@ -91,22 +153,26 @@ body{
 }
 
 form{
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    
-    
 
 }
 
 .form-div{
-    width: 30%;
+    width: 450px;
     border: 1px solid black;
     margin: 20px auto;
     padding: 20px;
     text-align: center;
+}
+
+input{
+    background-color: rgb(210, 203, 203);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
 }
 
