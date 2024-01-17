@@ -51,7 +51,7 @@
 .hero-container{
     position: relative;
     width: 100%;
-    height: 350px;
+    height: 400px;
     background: url(../assets/img/imagen-asturias.jpg) center/cover;
     clip-path: ellipse(49% 40% at 50% 50%);
      
@@ -88,5 +88,25 @@ body{
 .p-hero{
     color: white;
     font-size: var(--p-font-size);
+}
+
+form{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    
+
+}
+
+.form-div{
+    width: 30%;
+    border: 1px solid black;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
 }
 

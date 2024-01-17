@@ -15,22 +15,30 @@
         </div>
     </div>
 
-    <form action="" type="submit">
-        <input type="text" class="nombre" id="nombre" placeholder="Nombre">
-        <input type="text" class="correo" id="correo" placeholder="Correo Electronico">
+    <div class="form-div">
 
-        <label for="">Solicitud de informacion adicional</label>
-        <input type="radio" checked>
+        <h1>Contactanos</h1>
 
-        <label for="">Reserva de Ruta</label>
-        <input type="radio">
+        <form action="" type="submit" id="formularios">
+            <input type="text" class="nombre" id="nombre" placeholder="Nombre">
+            <input type="text" class="correo" id="correo" placeholder="Correo Electronico">
+    
+            <label for="">Solicitud de informacion adicional</label>
+            <input type="radio" name="radio" checked>
+    
+            <label for="">Reserva de Ruta</label>
+            <input type="radio" name="radio">
+    
+            <button class="info" id="info">Info</button>
+    
+            <textarea name="mensaje" id="mensaje" class="mensaje" cols="30" rows="10" placeholder="Por favor, inserta un mensaje"></textarea>
+    
+            <button class="enviar">Enviar</button>
 
-        <button class="info">Info</button>
+            <ul class="errores" id="errores"></ul>
+        </form>
 
-        <textarea name="mensaje" id="mensaje" class="mensaje" cols="30" rows="10" placeholder="Por favor, inserta un mensaje"></textarea>
-
-        <button class="enviar">Enviar</button>
-    </form>
+    </div>
 
     <script src="scripts/index.js"></script>
     
